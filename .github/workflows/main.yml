@@ -44,10 +44,8 @@ jobs:
       # Use the 'run-cpptest-action' GitHub action.
       uses: parasoft/run-cpptest-action@2.0.2
       # Uncomment if you are using C/C++test 2020.2 to generate a SARIF report:
-       with:
-     
-       installDir: 'D:\Download\parasoft_cpptest_professional-2024.1.0-win32.x86_64\cpptest'
-       reportFormat: xml,html,custom
+      # with:
+      #   reportFormat: xml,html,custom
       #   additionalParams: '-property report.custom.extension=sarif -property report.custom.xsl.file=${PARASOFT_SARIF_XSL}'
 
     # Uploads analysis results in the SARIF format, so that they are displayed as GitHub code scanning alerts.
